@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+/* Utility Classes*/
+.float-right {
+  float: right;
+}
 header {
   background: #ed7d31;
   color: #fff;
@@ -66,10 +70,11 @@ nav ul li a:hover {
 #landing-section img {
   margin: 1em;
 }
-#landing-section div {
+#title-container {
   font-size: 1.4em;
   width: 50%;
   position: absolute;
+  opacity: 0;
 }
 #landing-section div p {
   margin: 1em;
@@ -94,7 +99,7 @@ nav ul li a:hover {
   grid-column: span 2;
 }
 #portfolio article {
-  margin: 1em 2em ;
+  margin: 1em 5em ;
 }
 .portfolio-card h3 {
   color: #000;
@@ -106,14 +111,15 @@ nav ul li a:hover {
 }
 .portfolio-card {
   box-sizing: border-box;
-  padding: 1em 2em;
+  padding: .5em;
+  background: #fff;
+  border-radius: 5px;
 }
 .portfolio-card div {
-  background: #fff;
 }
 .portfolio-card div img {
   width: 50%;
-  display: inline;
+  display: inline-block;
 }
 .portfolio-card-text {
   width: 50%;

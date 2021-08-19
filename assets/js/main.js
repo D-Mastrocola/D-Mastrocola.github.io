@@ -100,6 +100,8 @@ function landingAnimation() {
   var subTitleTextWrapper = document.querySelector('#subtitle-text');
   subTitleTextWrapper.innerHTML = subTitleTextWrapper.textContent.replace(/./g, "<span class='subtitle-letter'>$&</span>");
 
+  
+  document.getElementById("title-container").style.opacity = 1;
   anime.timeline({ loop: false })
     .add({
       targets: '.title-letter',
@@ -116,11 +118,6 @@ function landingAnimation() {
       duration: 100,
       offset: '-=775',
       delay: (el, i) => 100 * (i + 1)
-    }).add({
-      targets: '#load-portfolio',
-      width: '9em',
-      height: '2.5em',
-      opacity: 1,
     })
 }
 landingAnimation();
