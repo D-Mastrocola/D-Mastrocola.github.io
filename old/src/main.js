@@ -23,7 +23,7 @@ const near = 0.1;
 const far = 1000;
 
 const scene = new THREE.Scene();
-scene.background =new THREE.Color(0x0C080C);
+scene.background = new THREE.Color(0x0C080C);
 var camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 camera.position.z += .75;
 camera.position.y -= .1;
@@ -62,9 +62,9 @@ function resizeRendererToDisplaySize(renderer) {
   const needResize = canvas.width !== width || canvas.height !== height;
   if (needResize) {
     renderer.setSize(width, height, false);
-    if(width < 500) {
+    if (width < 500) {
       camera.position.z = 1.75;
-    }else if(width < 800) {
+    } else if (width < 800) {
       camera.position.z = 1.5;
     } else if (width < 1000) {
       camera.position.z = 1;
@@ -92,10 +92,43 @@ function render() {
   }
   requestAnimationFrame(render);
 }
-document.getElementById("load-portfolio").addEventListener("click", function() {
+document.getElementById("load-portfolio").addEventListener("click", function () {
   loadPortfolioAnimation(scene, camera);
   modelRotation.isRotating = false;
 });
+
+function landingAnimation() {
+  console.log('landing Animation');
+  // Wrap every letter in a span
+  var titleTextWrapper = document.querySelector('#title-text');
+  titleTextWrapper.innerHTML = titleTextWrapper.textContent.replace(/./g, "<span class='title-letter'>$&</span>");
+
+  var subTitleTextWrapper = document.querySelector('#subtitle-text');
+  subTitleTextWrapper.innerHTML = subTitleTextWrapper.textContent.replace(/./g, "<span class='subtitle-letter'>$&</span>");
+
+  anime.timeline({ loop: false })
+    .add({
+      targets: '.title-letter',
+      opacity: [0, 1],
+      easing: "linear",
+      duration: 100,
+      offset: '-=775',
+      delay: (el, i) => 100 * (i)
+    })
+    .add({
+      targets: '.subtitle-letter',
+      opacity: [0, 1],
+      easing: "linear",
+      duration: 100,
+      offset: '-=775',
+      delay: (el, i) => 100 * (i + 1)
+    }).add({
+      targets: '#load-portfolio',
+      width: '9em',
+      height: '2.5em',
+      opacity: 1,
+    })
+}
 landingAnimation();
 
 requestAnimationFrame(render);

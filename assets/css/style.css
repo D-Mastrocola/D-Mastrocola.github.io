@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 header {
   background: #ed7d31;
@@ -46,6 +47,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 #landing-section {
+  font-family: "Baloo Tammudu 2", cursive;
   background: #ed7d31;
   width: 100%;
   display: flex;
