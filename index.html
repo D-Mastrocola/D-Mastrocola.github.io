@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dominic Mastrocola</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Landing -->
+    <section id="landing-section">
+      <canvas id="canvas"></canvas>
+      <!--<img id="head-shot" src="./assets/images/headShot.jpg" alt="Head Shot" />-->
+      <div>
+        <h1>Hello, I'm Dominic.</h1>
+        <p>
+          A driven Student at Case Western Reserve University pursuing my Full
+          Stack Web Certificate. Self-starter and quick learner seeking an entry
+          level position as a Web Developer.
+        </p>
+      </div>
+    </section>
+    <!--Header-->
+    <header>
+      <a href="/"
+        ><img src="./assets/images/Logo.svg" alt="My initials DM"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="#landing-section">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./portfolio/Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Portfolio-->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+
+      <div id="portfolio-div-container">
+        <article class="portfolio-card">
+          <div>
+            <img src="./assets/images/keyboard.png" />
+            <div class="portfolio-card-text">
+              <h3>Keyboard</h3>
+              <p>
+                A keyboard using p5 Js. You can record your notes by pressing
+                shift. The record button should turn red. when finished press
+                shift again and you can play it back by pressing enter
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div>
+            <img src="./assets/images/minecraft.png" />
+            <div class="portfolio-card-text">
+              <h3>JavaScript Craft</h3>
+              <p>
+                A simple minecraft clone made with THREEJS. Terrain is generated
+                using 3-D perlin map. WASD keys to move SHIFT and SPACE to move
+                up and down.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div>
+            <img src="./assets/images/chairsRUs.png" />
+            <div class="portfolio-card-text">
+              <h3>Chairs R US</h3>
+              <p>
+                A web shop made with React, CommerceJS for the backend API and
+                Stripe for the payment. You can add items to the cart change
+                quantity and checkout. Demo card is 4242 4242 4242 4242 (424).
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div>
+            <img src="./assets/images/pathfinder.png" />
+            <div class="portfolio-card-text">
+              <h3>Pathfinder</h3>
+              <p>
+                A visualization of the path finding algorithm A*. There is a
+                start node and end node.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <a href="https://github.com/D-Mastrocola">View All</a>
+    </section>
+
+    <!-- Contact-->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label>Name</label>
+        <input placeholder="Name" type="text" />
+        <label>Email</label>
+        <input placeholder="Email" type="text" />
+        <label>Subject</label>
+        <input placeholder="Subject" type="text" />
+        <label>Message</label>
+        <input placeholder="Enter message here:" type="text" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <h3>Dominic Mastrocola 2021</h3>
+      <div>
+        <ul>
+          <li>Phone: (330)-236-6774</li>
+          <li>Email: mastrodomcola@gmail.com</li>
+          <li><a href="https://github.com/D-Mastrocola">GitHub</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dominic-mastrocola-4100a4204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMdDTthOrTT6UdxAfibpA1w%3D%3D"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js" type="module" defer></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: #ed7d31;
+  color: #fff;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header img {
+  height: 100%;
+  padding: 0.5em 0.1em;
+}
+nav {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li a:hover {
+  cursor: pointer;
+}
+#landing-section {
+  background: #ed7d31;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  font-size: 1.6em;
+  text-align: center;
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+#landing-section img {
+  margin: 1em;
+}
+#landing-section div {
+  font-size: 1.4em;
+  width: 50%;
+  position: absolute;
+}
+#landing-section div p {
+  margin: 1em;
+}
+#head-shot {
+  border-radius: 50%;
+}
+#portfolio {
+  background: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio-div-container {
+  display: flex;
+  flex-direction: column;
+}
+#portfolio h2 {
+  text-align: center;
+  grid-column: span 2;
+}
+#portfolio article {
+  margin: 1em 2em ;
+}
+.portfolio-card h3 {
+  color: #000;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+.portfolio-card p {
+  color: #000;
+}
+.portfolio-card {
+  box-sizing: border-box;
+  padding: 1em 2em;
+}
+.portfolio-card div {
+  background: #fff;
+}
+.portfolio-card div img {
+  width: 50%;
+  display: inline;
+}
+.portfolio-card-text {
+  width: 50%;
+  display: inline-block;
+  float: right;
+  padding: 1em;
+}
+
+footer {
+  background: #ed7d31;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer h3 {
+  display: inline;
+  margin: 0 1em;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer div {
+  margin: 0;
+  margin-left: auto;
+  height: 100%;
+}
+footer ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+}
+footer ul li {
+  display: flex;
+  align-items: center;
+  height: 25%;
+}
