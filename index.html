@@ -13,13 +13,13 @@
   </head>
   <body>
     <!-- Landing -->
-    <section id="landing-section">
+    <!--<section id="landing-section">
       <canvas id="canvas"></canvas>
       <div id="title-container">
         <h1 id="title-text">Dominic Mastrocola</h1>
         <p id="subtitle-text">Web Developer / Game Developer</p>
       </div>
-    </section> 
+    </section> -->
     <!--Header-->
     <header>
       <a href="/"
@@ -56,69 +56,33 @@
         <img src="./assets/images/react.png" alt="React.js"/>
         <img src="./assets/images/Java.png" alt="Java"/>
       </ul>
+      </div>
     </section>
     <!--Portfolio-->
     <section id="portfolio">
       <h2>Portfolio</h2>
 
       <div id="portfolio-div-container">
+        <article class="portfolio-card" id='main-portfolio-card'>
+          <a href="https://serene-kowalevski-3184b4.netlify.app/" target="_blank"><img src="./assets/images/chairsRUs.png" /></a>
+        </article>
+        <article class="portfolio-card" >
+          <a href="https://d-mastrocola.github.io/JavaScriptCraft/" target="_blank"> <img src="./assets/images/minecraft.png" /></a>
+        </article>
+        <article class="portfolio-card" >
+          <a href="https://d-mastrocola.github.io/keyboard/" target="_blank"><img src="./assets/images/keyboard.png" /></a>
+        </article>
+        
         <article class="portfolio-card">
-          <div>
-            <img src="./assets/images/keyboard.png" />
-            <div class="portfolio-card-text" class="float-right">
-              <h3>Keyboard</h3>
-              <p>
-                A keyboard using p5 Js. You can record your notes by pressing
-                shift. The record button should turn red. when finished press
-                shift again and you can play it back by pressing enter
-              </p>
-            </div>
-          </div>
+            <a href="https://d-mastrocola.github.io/Path-Finder-Visualizer/" target="_blank"><img src="./assets/images/pathfinder.png"/></a>
         </article>
 
         <article class="portfolio-card">
-          <div>
-            <img src="./assets/images/minecraft.png" class="float-right" />
-            <div class="portfolio-card-text">
-              <h3>JavaScript Craft</h3>
-              <p>
-                A simple minecraft clone made with THREEJS. Terrain is generated
-                using 3-D perlin map. WASD keys to move SHIFT and SPACE to move
-                up and down.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <article class="portfolio-card">
-          <div>
-            <img src="./assets/images/chairsRUs.png" />
-            <div class="portfolio-card-text" class="float-right">
-              <h3>Chairs R US</h3>
-              <p>
-                A web shop made with React, CommerceJS for the backend API and
-                Stripe for the payment. You can add items to the cart change
-                quantity and checkout. Demo card is 4242 4242 4242 4242 (424).
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <article class="portfolio-card">
-          <div>
-            <img src="./assets/images/pathfinder.png" class="float-right" />
-            <div class="portfolio-card-text">
-              <h3>Pathfinder</h3>
-              <p>
-                A visualization of the path finding algorithm A*. There is a
-                start node and end node.
-              </p>
-            </div>
-          </div>
-        </article>
+          <img src="./assets/images/pathfinder.png" />
+      </article>
       </div>
 
-      <a href="https://github.com/D-Mastrocola">View All</a>
+      <a id='view-all-link' href="https://github.com/D-Mastrocola">View All</a>
     </section>
 
     <!-- Contact-->
