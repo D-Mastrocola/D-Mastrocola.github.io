@@ -179,9 +179,21 @@ nav ul li a:hover {
 #last-card { 
   border-bottom: none;
 }
+
+/* Contact Styles */
+#contact {
+  padding: 5em 10em;
+  font-size: 1.3em;
+}
+#contact h2 {
+  border-bottom: 2px solid var(--cta-color);
+  display: inline-block;
+  padding-right: .5em;
+  margin-bottom:.5em;
+}
 /* Footer Styles */
 footer {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: #fff;
   height: 100px;
   display: flex;
