@@ -34,71 +34,162 @@
         </ul>
       </nav>
     </header>
+    <!-- Landing Section -->
+    <section id="landing">
+      <h1>Hi, I'm Dominic Mastrocola</h1>
+      <p>Front End / Game Developer</p>
+      <div>
+        <a href="#contact" id="landing-btn-filled" class="landing-btn"
+          >Let's Work Together!</a
+        >
+        <a href="#projects" class="landing-btn">View Projects</a>
+      </div>
+    </section>
     <!-- About Section -->
     <section id="about">
-      <div class='flex-container'>
-        <img id="head-shot" src="./assets/images/headShot.jpg" alt="Avatar" />
-        
-        <div id='text-container'>
-          <h2>Hello I'm Dominic.</h2>
-          <p>
-            I am a Web Developer based in Ohio. I love taking products and showing
-            them off to the world. Let's take your buisiness to the next level!
-          </p>
-          <a href="#contact">Contact Me</a>
-        </div>
-      </div>
-       
-      <div class='skill-list'>
-        <img src="./assets/images/html5.png" alt="HTML"/>
-        <img src="./assets/images/css.png" alt="CSS"/>
-        <img src="./assets/images/javascript.png" alt="JavaScript"/>
-        <img src="./assets/images/react.png" alt="React.js"/>
-        <img src="./assets/images/Java.png" alt="Java"/>
-      </ul>
+      <img src="./assets/images/headShot.jpg" />
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I am a Front End Developer and aspiring Game Developer based in Ohio,
+          USA. I take your ideas and turn it into a responsive website that can
+          be view by anyone anywhere. Currently attending Case Western Reserve
+          University and focusing on growing my skills as a developer
+        </p>
       </div>
     </section>
     <!--Portfolio-->
     <section id="portfolio">
       <h2>Portfolio</h2>
 
-      <div id="portfolio-div-container">
-        <article class="portfolio-card" id='main-portfolio-card'>
-          <a href="https://serene-kowalevski-3184b4.netlify.app/" target="_blank"><img src="./assets/images/chairsRUs.png" /></a>
-        </article>
-        <article class="portfolio-card" >
-          <a href="https://d-mastrocola.github.io/JavaScriptCraft/" target="_blank"> <img src="./assets/images/minecraft.png" /></a>
-        </article>
-        <article class="portfolio-card" >
-          <a href="https://d-mastrocola.github.io/keyboard/" target="_blank"><img src="./assets/images/keyboard.png" /></a>
-        </article>
-        
-        <article class="portfolio-card">
-            <a href="https://d-mastrocola.github.io/Path-Finder-Visualizer/" target="_blank"><img src="./assets/images/pathfinder.png"/></a>
-        </article>
-
-        <article class="portfolio-card">
-          <img src="./assets/images/pathfinder.png" />
+      <article class="portfolio-card">
+        <img src="./assets/images/pathfinder.png" alt="pathfinder project" />
+        <div class="text-container">
+          <h3>Pathfinder</h3>
+          <p>
+            A pathfinder visualizer based on the A* algorithm. Made using
+            JavaScript. You can change the position of the start and end nodes
+            by clicking and dragging. Place wall nodes by clicking on an empty
+            node
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/Path-Finder-Visualizer/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/Path-Finder-Visualizer"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
       </article>
-      </div>
 
-      <a id='view-all-link' href="https://github.com/D-Mastrocola">View All</a>
-    </section>
+      <article class="portfolio-card">
+        <div class="text-container text-right">
+          <h3>JavaScript Craft</h3>
+          <p>
+            A simple minecraft clone made with THREEjs. The terrain is generated
+            using perlin noise to create smoother terrain with randomness to
+            make it feel organic.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/JavaScriptCraft/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/JavaScriptCraft"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+        <img src="./assets/images/minecraft.png" alt="javascript craft" />
+      </article>
 
-    <!-- Contact-->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label>Name</label>
-        <input placeholder="Name" type="text" />
-        <label>Email</label>
-        <input placeholder="Email" type="text" />
-        <label>Subject</label>
-        <input placeholder="Subject" type="text" />
-        <label>Message</label>
-        <input placeholder="Enter message here:" type="text" />
-        <button type="submit">Send</button>
-      </form>
+      <article class="portfolio-card">
+        <img src="./assets/images/platformer.png" alt="javascript craft" />
+        <div class="text-container">
+          <h3>Platformer</h3>
+          <p>
+            A platformer game made using vanilla javascript. Features mutliple
+            levels stored in text, game physics and powerups.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/JavaScriptCraft/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/JavaScriptCraft"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="text-container text-right">
+          <h3>Keyboard</h3>
+          <p>
+            A keyboard made with p5js. You can record by clicking record and
+            again to stop. Once you start a new recording the previous recording
+            is lost. Playback recording by clicking play.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/JavaScriptCraft/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/JavaScriptCraft"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+        <img src="./assets/images/keyboard.png" alt="keyboard" />
+      </article>
+
+      <article class="portfolio-card" id='last-card'>
+        <img src="./assets/images/chairsRUs.png" alt="run buddy" />
+        <div class="text-container">
+          <h3>Platformer</h3>
+          <p>
+            A mockup website for a fake company named Run Buddy Inc. I used
+            media queries to make it fully responisve.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/JavaScriptCraft/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/JavaScriptCraft"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+      </article>
     </section>
 
     <footer>
