@@ -4,6 +4,9 @@ My portfolio site [LIVE](https://D-Mastrocola.github.io)
 
 ![Site Preview](https://github.com/D-Mastrocola/D-Mastrocola.github.io/blob/main/assets/images/screenshot.png)
 
+## About
+This site showcases my skills as a developer. It also provides links to get in contact with me for potential employers
+
 ## User Story
 - AS AN employer
 - I WANT to view a potential employee's deployed portfolio of work samples
