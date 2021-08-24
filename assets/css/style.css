@@ -5,10 +5,6 @@
   --white: #fff;
   --black: rgb(29, 39, 49);
 }
-html,
-body {
-  width: 100vw;
-}
 * {
   margin: 0;
   padding: 0;
@@ -263,6 +259,8 @@ footer ul li {
   height: 25%;
   margin: 0.5em;
 }
+
+/* Media Queries */
 @media screen and (max-width: 1024px) {
   .portfolio-card .text-container {
     font-size: 1em;
@@ -271,6 +269,8 @@ footer ul li {
     padding: 2em 5em;
   }
 }
+
+
 @media screen and (max-width: 980px) {
   nav ul li a {
     font-size: 0.9em;
@@ -320,6 +320,8 @@ footer ul li {
     margin-left: 4em;
   }
 }
+
+
 @media screen and (max-width: 768px) {
   #landing {
     align-items: center;
@@ -398,6 +400,8 @@ footer ul li {
     display: inline-block;
   }
 }
+
+
 @media screen and (max-width: 425px) {
   #landing {
     height: 60vh;
