@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dominic Mastrocola</title>
     <link rel="icon" type="image/svg" href="./assets/images/Logo.svg" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -22,7 +23,7 @@
     </section> -->
     <!--Header-->
     <header>
-      <a href="/"
+      <a id='logo-container' href="/"
         ><img src="./assets/images/Logo.svg" alt="My initials DM"
       /></a>
       <nav>
@@ -42,7 +43,7 @@
         <a href="#contact" id="landing-btn-filled" class="landing-btn"
           >Let's Work Together!</a
         >
-        <a href="#projects" class="landing-btn">View Projects</a>
+        <a href="#portfolio" class="landing-btn">View Projects</a>
       </div>
     </section>
     <!-- About Section -->
@@ -62,6 +63,7 @@
     <section id="portfolio">
       <h2>Portfolio</h2>
 
+      <!-- the class reverse column is a utility class so when the screen size changes the format is consistent-->
       <article class="portfolio-card">
         <img src="./assets/images/pathfinder.png" alt="pathfinder project" />
         <div class="text-container">
@@ -89,7 +91,7 @@
         </div>
       </article>
 
-      <article class="portfolio-card">
+      <article class="portfolio-card reverse-column">
         <div class="text-container text-right">
           <h3>JavaScript Craft</h3>
           <p>
@@ -112,7 +114,8 @@
             >
           </div>
         </div>
-        <img src="./assets/images/minecraft.png" alt="javascript craft" />
+        <img  src="./assets/images/minecraft.png" alt="javascript craft" />
+        
       </article>
 
       <article class="portfolio-card">
@@ -120,8 +123,7 @@
         <div class="text-container">
           <h3>Platformer</h3>
           <p>
-            A platformer game made using vanilla javascript. Features mutliple
-            levels stored in text, game physics and powerups.
+            A platformer game made using vanilla javascript. Features 2D box collision detection, Game physics, Multiple levels that are stored as text, powerups , and gamestate
           </p>
           <div>
             <a
@@ -139,8 +141,9 @@
           </div>
         </div>
       </article>
-
-      <article class="portfolio-card">
+ 
+      <article class="portfolio-card reverse-column">
+        
         <div class="text-container text-right">
           <h3>Keyboard</h3>
           <p>
@@ -176,13 +179,13 @@
           </p>
           <div>
             <a
-              href="https://d-mastrocola.github.io/JavaScriptCraft/"
+              href="https://d-mastrocola.github.io/run-buddy/"
               target="_blank"
               class="portfolio-link"
               >Live</a
             >
             <a
-              href="https://github.com/D-Mastrocola/JavaScriptCraft"
+              href="https://github.com/D-Mastrocola/run-buddy"
               target="_blank"
               class="portfolio-link"
               >Code</a
@@ -195,9 +198,13 @@
     <section id='contact'>
       <h2>Let's Get In Touch</h2>
       <p>Feel free to send me an email, text, call, and/or connect with me on LinkedIn</p>
+      <ul>
+        <li>(330)-236-6775</li>
+        <li>mastrodomcola@gmail.com</li>
+      </ul>
       <div>
-        <a href='mailto:mastrodomcola@gmail.com'>Send Me An Email</a>
-        <a href='https://www.linkedin.com/in/dominic-mastrocola-4100a4204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMdDTthOrTT6UdxAfibpA1w%3D%3D'>LinkedIn</a>
+        <a class="contact-link" target="_blank" href='mailto:mastrodomcola@gmail.com'>Send Me An Email</a>
+        <a class="contact-link" target="_blank" href='https://www.linkedin.com/in/dominic-mastrocola-4100a4204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMdDTthOrTT6UdxAfibpA1w%3D%3D'>LinkedIn</a>
       </div>
       </div>
       
@@ -207,18 +214,14 @@
       <h3>Dominic Mastrocola 2021</h3>
       <div>
         <ul>
-          <li>Phone: (330)-236-6774</li>
-          <li>Email: mastrodomcola@gmail.com</li>
           <li><a href="https://github.com/D-Mastrocola">GitHub</a></li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/dominic-mastrocola-4100a4204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMdDTthOrTT6UdxAfibpA1w%3D%3D"
-              >LinkedIn</a
-            >
+            <a href="https://www.linkedin.com/in/dominic-mastrocola-4100a4204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMdDTthOrTT6UdxAfibpA1w%3D%3D">LinkedIn</a>
           </li>
         </ul>
       </div>
     </footer>
-    <script src="./assets/js/main.js" type="module"></script>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
