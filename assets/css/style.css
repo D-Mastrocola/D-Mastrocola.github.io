@@ -169,8 +169,8 @@ nav ul li a:hover {
   font-size: 1.1em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
+  justify-content: space-between;
+  height: 200px;
 }
 .portfolio-card h3,
 .portfolio-card p {
@@ -291,6 +291,9 @@ footer ul li {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .portfolio-card .text-container {
+    height: auto;
   }
   /* the revese column class was made to keep format */
   .reverse-column {
