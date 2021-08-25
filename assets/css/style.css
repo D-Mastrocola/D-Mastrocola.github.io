@@ -31,6 +31,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 #logo-container {
   width: 50%;
@@ -189,6 +190,22 @@ nav ul li a:hover {
 .portfolio-link:hover {
   color: var(--cta-color);
   transform: scale(1.1) rotate(2deg);
+}
+#first-card {
+  position: relative;
+}
+#first-card  img{
+  height: 500px;
+}
+#first-card div {
+  position: absolute;
+  bottom: 50px;
+}
+#first-card div a {
+  background-color: var(--cta-color);
+  color: var(--white);
+  padding: .5em 1em;
+  border-radius: 3px;
 }
 #last-card {
   border-bottom: none;
