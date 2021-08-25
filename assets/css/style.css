@@ -184,7 +184,7 @@ nav ul li a:hover {
 .portfolio-link {
   display: inline-block;
   background-color: var(--cta-color);
-  color: var(--white);
+  color: var(--primary-color);
   padding: 8px 15px;
   border-radius: 3px;
   text-decoration: none;
@@ -197,11 +197,12 @@ nav ul li a:hover {
   position: relative;
   width: 100%;
   height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-#first-card a {
-  width: 100%;
-}
-#first-card  img{
+#first-card img {
   width: 100%;
   height: auto;
 }
@@ -285,7 +286,6 @@ footer ul li {
   }
 }
 
-
 @media screen and (max-width: 980px) {
   nav ul li a {
     font-size: 0.9em;
@@ -307,7 +307,7 @@ footer ul li {
     align-items: center;
     text-align: center;
   }
-  
+
   #first-card div {
     position: static;
   }
@@ -347,7 +347,6 @@ footer ul li {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   #landing {
     align-items: center;
@@ -385,8 +384,8 @@ footer ul li {
     margin-top: 1em;
   }
   #landing a {
-    margin: .5em;
-    font-size: .8em;
+    margin: 0.5em;
+    font-size: 0.8em;
   }
 
   #about {
@@ -427,7 +426,6 @@ footer ul li {
   }
 }
 
-
 @media screen and (max-width: 425px) {
   #landing {
     height: 60vh;
@@ -438,7 +436,7 @@ footer ul li {
     height: auto;
   }
   .portfolio-card {
-    font-size: .7em;
+    font-size: 0.7em;
     border-bottom: 2px solid var(--secondary-color);
   }
   #contact {
@@ -460,7 +458,7 @@ footer ul li {
   }
   footer ul {
     flex-direction: column;
-    
+
     justify-content: center;
     align-items: center;
   }
