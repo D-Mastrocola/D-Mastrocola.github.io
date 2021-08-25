@@ -182,30 +182,28 @@ nav ul li a:hover {
   text-align: right;
 }
 .portfolio-link {
-  color: var(--cta-color);
   display: inline-block;
-  margin-right: 10px;
-  font-weight: bolder;
+  background-color: var(--cta-color);
+  color: var(--white);
+  padding: 8px 15px;
+  border-radius: 3px;
+  text-decoration: none;
 }
 .portfolio-link:hover {
-  color: var(--cta-color);
+  background-color: hsl(49, 86%, 42%);
   transform: scale(1.1) rotate(2deg);
 }
 #first-card {
   position: relative;
+  width: 100%;
+  height: fit-content;
+}
+#first-card a {
+  width: 100%;
 }
 #first-card  img{
-  height: 500px;
-}
-#first-card div {
-  position: absolute;
-  bottom: 50px;
-}
-#first-card div a {
-  background-color: var(--cta-color);
-  color: var(--white);
-  padding: .5em 1em;
-  border-radius: 3px;
+  width: 100%;
+  height: auto;
 }
 #last-card {
   border-bottom: none;
@@ -309,8 +307,16 @@ footer ul li {
     align-items: center;
     text-align: center;
   }
+  
+  #first-card div {
+    position: static;
+  }
+  #first-card div a {
+    margin-top: 12px;
+  }
   .portfolio-card .text-container {
     height: auto;
+    margin: 0;
   }
   /* the revese column class was made to keep format */
   .reverse-column {
