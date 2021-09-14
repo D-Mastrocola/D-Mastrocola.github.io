@@ -167,7 +167,7 @@ nav ul li a:hover {
 }
 .portfolio-card .text-container {
   padding: 1em 1em 0 1em;
-  font-size: 1.3em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -277,21 +277,11 @@ footer ul li {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
-  .portfolio-card .text-container {
-    font-size: 1em;
-  }
+
+@media screen and (max-width: 1200px) {
+
   #portfolio {
     padding: 2em 5em;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  nav ul li a {
-    font-size: 0.9em;
-  }
-  #about div {
-    width: 80%;
   }
   #portfolio h2 {
     display: block;
@@ -324,6 +314,15 @@ footer ul li {
   }
   .text-right {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav ul li a {
+    font-size: 0.9em;
+  }
+  #about div {
+    width: 80%;
   }
   #contact {
     padding: 2em 5em;
