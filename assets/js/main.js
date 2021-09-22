@@ -1,4 +1,4 @@
-const links = document.querySelectorAll("header nav ul li a");
+const links = document.querySelectorAll(".scroll-link");
  
 for (const link of links) {
   link.addEventListener("click", clickHandler);

@@ -31,6 +31,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 #logo-container {
   width: 50%;
@@ -166,7 +167,7 @@ nav ul li a:hover {
 }
 .portfolio-card .text-container {
   padding: 1em 1em 0 1em;
-  font-size: 1.3em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -181,14 +182,29 @@ nav ul li a:hover {
   text-align: right;
 }
 .portfolio-link {
-  color: var(--cta-color);
   display: inline-block;
-  margin-right: 10px;
-  font-weight: bolder;
+  background-color: var(--cta-color);
+  color: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 3px;
+  text-decoration: none;
 }
 .portfolio-link:hover {
-  color: var(--cta-color);
+  background-color: hsl(49, 86%, 42%);
   transform: scale(1.1) rotate(2deg);
+}
+#first-card {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#first-card img {
+  width: 100%;
+  height: auto;
 }
 #last-card {
   border-bottom: none;
@@ -261,22 +277,11 @@ footer ul li {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
-  .portfolio-card .text-container {
-    font-size: 1em;
-  }
+
+@media screen and (max-width: 1200px) {
+
   #portfolio {
     padding: 2em 5em;
-  }
-}
-
-
-@media screen and (max-width: 980px) {
-  nav ul li a {
-    font-size: 0.9em;
-  }
-  #about div {
-    width: 80%;
   }
   #portfolio h2 {
     display: block;
@@ -292,8 +297,16 @@ footer ul li {
     align-items: center;
     text-align: center;
   }
+
+  #first-card div {
+    position: static;
+  }
+  #first-card div a {
+    margin-top: 12px;
+  }
   .portfolio-card .text-container {
     height: auto;
+    margin: 0;
   }
   /* the revese column class was made to keep format */
   .reverse-column {
@@ -301,6 +314,15 @@ footer ul li {
   }
   .text-right {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav ul li a {
+    font-size: 0.9em;
+  }
+  #about div {
+    width: 80%;
   }
   #contact {
     padding: 2em 5em;
@@ -323,7 +345,6 @@ footer ul li {
     margin-left: 4em;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   #landing {
@@ -362,8 +383,8 @@ footer ul li {
     margin-top: 1em;
   }
   #landing a {
-    margin: .5em;
-    font-size: .8em;
+    margin: 0.5em;
+    font-size: 0.8em;
   }
 
   #about {
@@ -404,7 +425,6 @@ footer ul li {
   }
 }
 
-
 @media screen and (max-width: 425px) {
   #landing {
     height: 60vh;
@@ -415,7 +435,7 @@ footer ul li {
     height: auto;
   }
   .portfolio-card {
-    font-size: .7em;
+    font-size: 0.7em;
     border-bottom: 2px solid var(--secondary-color);
   }
   #contact {
@@ -437,7 +457,7 @@ footer ul li {
   }
   footer ul {
     flex-direction: column;
-    
+
     justify-content: center;
     align-items: center;
   }

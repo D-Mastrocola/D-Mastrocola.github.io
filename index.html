@@ -28,9 +28,9 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class='scroll-link' href="#about">About</a></li>
+          <li><a class='scroll-link' href="#portfolio">Portfolio</a></li>
+          <li><a class='scroll-link' href="#contact">Contact</a></li>
           <li><a href="./portfolio/Resume.pdf" target="_blank">Resume</a></li>
         </ul>
       </nav>
@@ -40,10 +40,10 @@
       <h1>Hi, I'm Dominic Mastrocola</h1>
       <p>Front End / Game Developer</p>
       <div>
-        <a href="#contact" id="landing-btn-filled" class="landing-btn"
+        <a href="#contact" id="landing-btn-filled" class="landing-btn scroll-link"
           >Let's Work Together!</a
         >
-        <a href="#portfolio" class="landing-btn">View Projects</a>
+        <a href="#portfolio" class="landing-btn scroll-link">View Projects</a>
       </div>
     </section>
     <!-- About Section -->
@@ -64,6 +64,103 @@
       <h2>Portfolio</h2>
 
       <!-- the class reverse column is a utility class so when the screen size changes the format is consistent-->
+
+      <article class="portfolio-card" id='first-card'>
+        <img src="./assets/images/chairsRUs.png" alt="E-Commerce Site" />
+        <div class="text-container">
+          <h3>Chairs R Us</h3>
+          <p>
+            A single page e-commerce site made with React Routers. I used Commerce.js for the backend and the Stripe API for card validation. You can add, increment, decrement, remove, and empty items from the cart. You can checkout by using the card 4242 4242 4242 4242 424.
+          </p>
+          <div>
+            <a
+              href="https://serene-kowalevski-3184b4.netlify.app/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/Chairs-R-Us"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+      </article>
+      <article class="portfolio-card reverse-column">
+        
+        <div class="text-container">
+          <h3>Coding Test</h3>
+          <p>
+            Using JavaScript I used a game loop to to keep track of time. I made an array of question objects and everytime the user answers a question it grabs an random question from the list and deletes it. If the time runs out the quiz ends or if all the questions have been answered the test ends. If the user's score is a highscore a form is created and the highscore list is saved to local storage.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/Code-Quiz-Challenge/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/Code-Quiz-Challenge"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+        <img src="./assets/images/codeQuiz.png" alt="coding quiz" />
+      </article>
+
+      <article class="portfolio-card">
+        <img src="./assets/images/taskinator.png" alt="To Do List" />
+        <div class="text-container">
+          <h3>Taskinator</h3>
+          <p>
+            Using JavaScript I took input from the form and used it to create new DOM elements. I learned about the event.preventDefault() function to prevent page from reloding on form submit. I learned about data attributes and using local storage to save the tasks to browser.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/Taskinator/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/Taskinator"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="portfolio-card reverse-column">
+        <div class="text-container text-right">
+          <h3>Run Buddy</h3>
+          <p>
+            A mockup website for a fake company named Run Buddy Inc. I used HTML and CSS. I made sure that images had alt tags and I used the most accessable tags for screen readers; and I used media queries to make it responsive to any screen size.
+          </p>
+          <div>
+            <a
+              href="https://d-mastrocola.github.io/run-buddy/"
+              target="_blank"
+              class="portfolio-link"
+              >Live</a
+            >
+            <a
+              href="https://github.com/D-Mastrocola/run-buddy"
+              target="_blank"
+              class="portfolio-link"
+              >Code</a
+            >
+          </div>
+        </div>
+        <img src="./assets/images/runbuddy.png" alt="run buddy" />
+      </article>
+
       <article class="portfolio-card">
         <img src="./assets/images/pathfinder.png" alt="pathfinder project" />
         <div class="text-container">
@@ -118,8 +215,8 @@
         
       </article>
 
-      <article class="portfolio-card">
-        <img src="./assets/images/platformer.png" alt="javascript craft" />
+      <article class="portfolio-card" id='last-card'>
+        <img src="./assets/images/platformer.png" alt="platformer"/>
         <div class="text-container">
           <h3>Platformer</h3>
           <p>
@@ -127,72 +224,22 @@
           </p>
           <div>
             <a
-              href="https://d-mastrocola.github.io/JavaScriptCraft/"
+              href="https://d-mastrocola.github.io/Platformer/"
               target="_blank"
               class="portfolio-link"
               >Live</a
             >
             <a
-              href="https://github.com/D-Mastrocola/JavaScriptCraft"
+              href="https://github.com/D-Mastrocola/Platformer"
               target="_blank"
               class="portfolio-link"
               >Code</a
             >
           </div>
         </div>
-      </article>
- 
-      <article class="portfolio-card reverse-column">
-        
-        <div class="text-container text-right">
-          <h3>Keyboard</h3>
-          <p>
-            A keyboard made with p5js. You can record by clicking record and
-            again to stop. Once you start a new recording the previous recording
-            is lost. Playback recording by clicking play.
-          </p>
-          <div>
-            <a
-              href="https://d-mastrocola.github.io/JavaScriptCraft/"
-              target="_blank"
-              class="portfolio-link"
-              >Live</a
-            >
-            <a
-              href="https://github.com/D-Mastrocola/JavaScriptCraft"
-              target="_blank"
-              class="portfolio-link"
-              >Code</a
-            >
-          </div>
-        </div>
-        <img src="./assets/images/keyboard.png" alt="keyboard" />
       </article>
 
-      <article class="portfolio-card" id='last-card'>
-        <img src="./assets/images/runbuddy.png" alt="run buddy" />
-        <div class="text-container">
-          <h3>Platformer</h3>
-          <p>
-            A mockup website for a fake company named Run Buddy Inc. I used
-            media queries to make it fully responisve.
-          </p>
-          <div>
-            <a
-              href="https://d-mastrocola.github.io/run-buddy/"
-              target="_blank"
-              class="portfolio-link"
-              >Live</a
-            >
-            <a
-              href="https://github.com/D-Mastrocola/run-buddy"
-              target="_blank"
-              class="portfolio-link"
-              >Code</a
-            >
-          </div>
-        </div>
-      </article>
+      
     </section>
     <!-- Contact Section -->
     <section id='contact'>
