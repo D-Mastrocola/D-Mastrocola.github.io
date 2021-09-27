@@ -125,6 +125,7 @@ nav ul li a:hover {
 }
 #about img {
   border-radius: 50%;
+  height: 200px;
 }
 #about div {
   margin: 2em 0;
